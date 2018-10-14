@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage[autostyle]{csquotes}
+\RequirePackage{doi}
+%\usepackage[style=numeric]{biblatex}
+%\usepackage[sorting=none, backend=biber]{biblatex} % load the package
+%\usepackage[backend=biber,style=authoryear,sorting=ydnt]{biblatex}
+\usepackage[backend=biber,style=phys,sorting=ydnt]{biblatex}
+% see https://www.overleaf.com/learn/latex/Biblatex_citation_styles
+% Plan should be to create separate bibtex files for book chapters,
+% journal articles, conference abstracts, and internal reports, then refer to these in different sections
+\addbibresource{gtpapers.bib}
+\addbibresource{gtbookchapters.bib}
+\addbibresource{gtconferences.bib}
+\addbibresource{gtreports.bib}
+\addbibresource{gttheses.bib}
+\title{Academic Products}
+\author{Glenn Thompson}
+
+\begin{document}
+\maketitle
+\nocite{*}
+% Order here follows Karen's https://theprofessorisin.com/2016/08/19/dr-karens-rules-of-the-academic-cv/
+%\printbibliography[type=?,title={Books}]
+%\printbibliography[type=?,title={Edited Volumes}]
+\printbibliography[type=article,title={Refereed Journal Articles}]
+%\nocite{inbook}
+\printbibliography[type=inbook,title={Book Chapters}]
+%\nocite{inproceedings}
+\printbibliography[type=inproceedings,title={Conference Proceedings}]
+%\printbibliography[type=?,title={Encylopedia Entries}]
+%\printbibliography[type=?,title={Book Reviews}]
+\printbibliography[type=unpublished,title={Manuscripts in Submission}]
+%\printbibliography[type=?,title={Manuscripts in Preparation}]
+\printbibliography[type=?,title={Web-Based Publications}]
+\printbibliography[type=?,title={Other Publications}]
+%\nocite{report}
+\printbibliography[type=report,title={Peer Reviewed Reports}]
+\printbibliography[type=techreport,title={Technical Reports}]
+%\nocite{thesis}
+\printbibliography[type=thesis,title={Theses}]
+%add proposals funded & submitted
+%add software - and give software doi
+\end{document}

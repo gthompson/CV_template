@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage{lmodern}
+%\usepackage[english]{babel}
+%\usepackage[autostyle]{csquotes}
+
+% https://tex.stackexchange.com/questions/51434/biblatex-citation-order
+% https://www.overleaf.com/learn/latex/Biblatex_citation_styles
+% https://www.reed.edu/cis/help/LaTeX/bibtexstyles.html
+\title{Testing citations}
+\author{Glenn}
+
+\begin{document}
+
+\maketitle
+%Airplanes are by no means the only use of %aerodynamics\cite{edmonds2003so2}.
+
+\bibliographystyle{abbrv}
+%\bibliography{citations}
+%\bibliography{gtbookchapters}
+\bibliography{gtpapers}
+\nocite{*}
+\bibliography{gtconferences}
+\nocite{*}
+%\bibliography{gttheses}
+%\bibliography{gtreports}
+
+\end{document}

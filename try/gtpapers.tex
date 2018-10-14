@@ -1,0 +1,24 @@
+\documentclass[12pt]{article}
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage{lmodern}
+%\usepackage[english]{babel}
+%\usepackage[autostyle]{csquotes}
+%\RequirePackage{doi}
+\usepackage[backend=biber,style=phys,sorting=ydnt]{biblatex}
+\addbibresource{gtpapers.bib}
+\addbibresource{gtbookchapters.bib}
+%\title{Peer reviewed journal articles}
+%\author{Glenn Thompson}
+
+\begin{document}
+\nocite{*}
+%\printbibliography[title={Refereed Journal Articles}]
+\printbibliography[heading=none]
+\\
+.\\
+Conference papers: 65 (17 as first author)\\ % see gtconferencepapers.tex
+Technical reports: 31 (25 as first author)\\ % see gtreports.tex
+
+
+\end{document}
