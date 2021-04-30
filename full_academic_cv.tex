@@ -1,0 +1,772 @@
+\documentclass[margin,line]{res}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+% if using pdflatex:
+%\setlength{\pdfpagewidth}{\paperwidth}
+%\setlength{\pdfpageheight}{\paperheight} 
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\usepackage{comment}
+\usepackage{multicol}
+\usepackage{colortbl}
+\usepackage[colorlinks]{hyperref}
+% %%%%%%%% stuff from try/gtpapers.tex
+%\documentclass[12pt]{article}
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage{lmodern}
+%\usepackage[english]{babel}
+%\usepackage[autostyle]{csquotes}
+\usepackage{arydshln}
+\setlength{\dashlinedash}{1.5pt}
+%\setlength{\dashlinegap}{4.5pt}
+%\setlength{\arrayrulewidth}{0.2pt}
+%\RequirePackage{doi}
+\usepackage[backend=biber,style=phys,sorting=ydnt]{biblatex}
+\addbibresource{gtpapers.bib}
+\addbibresource{gtbookchapters.bib}
+%\title{Peer reviewed journal articles}
+%\author{Glenn Thompson}
+%%%%%%%%%%%
+
+\begin{document}
+
+\name{Glenn Thompson \vspace*{.1in} \hspace{11.2cm} Curriculum vitae} 
+\begin{resume}
+
+\vspace{-10pt}
+\section{\sc Contact Information}
+\vspace{.05in}
+\begin{tabular}{@{}p{3in}p{5in}}
+School of Geosciences     & {\it Tel:} 813 974-3702  \\            
+University of South Florida   &    {\it Cell:} 907-687-7747\\         
+4202 East Fowler Ave., NES107 &  {\it E-mail:} thompsong@usf.edu \\
+Tampa, FL 33620 USA  & .\\%\it Website: http://seismiclab.web.usf.edu/thompsong\\    
+\end{tabular}
+\\
+\hline
+
+%\begin{comment}
+\section{\sc Key Experience}
+Had responsibility for building and managing all aspects the seismic monitoring program at the Montserrat Volcano Observatory, including the Operations Room and 24/7 alarm systems, and leading a team of seismic analysts and field technicians. Devised a three-phase strategy to deliver robust seismic monitoring and streamline seismic operations. Developed innovative approaches to seismically monitor pyroclastic density currents and lahars, including early warning systems. Designed the Operations Room of the current MVO and planned and executed the move without losing any data. Expertise in the design, implementation and integration of real-time seismic monitoring systems. 20 years in geophysical software development. 13 years as an observatory-based network operations seismologist.  Expertise in volcanic seismicity.  Trained in systems analysis and design. Expertise in Python, MATLAB, Perl and PhP programming, and in managing large seismic databases. Developer of the GISMO seismic analysis toolbox (approx. 400 registered users {\&} 1000 downloads per year).
+%\end{comment}
+\\
+\hline
+\section{\sc Education}
+{\bf Ph.D., Volcano Seismology (Geophysics)} \hfill {\bf 1 Jul, 1994 - 17 Sep, 1999} \\
+{\bf University of Leeds}, England, UK\\
+Thesis:  Modelling of seismo-volcanic sources \\
+Advisor: J{\"u}rgen Neuberg \\
+\\
+{\bf M.Sc., Geophysics} \hfill {\bf 6 Sep, 1993 - Jun 30, 1995}\\
+{\bf University of Durham}, England, UK\\
+Dissertation: (Marine Seismology) Modelling of bottom-simulating reflectors\\
+\\
+{\bf B.Sc. Hons., Theoretical Physics and Mathematics} \hfill {\bf 9 Oct, 1989 - 7 Jul, 1993}\\
+{\bf University of St. Andrews}, Scotland, UK\\
+169.5 semester credit hours (Physics 77.5, Mathematics 67, Computer Science 25), GPA 3.51\\
+Dissertation: Solar Coronal Heating\\
+\\
+\begin{comment}
+{\bf A Levels} \hfill Aug 1987 - Jun 1989\\
+Rawlins Academy, England, UK\\
+Mathematics (A),
+Physics (A),
+Computer Science (B)
+GPA 3.67, equivalent to High School Diploma + 40 undergraduate credits.\\
+\\
+{\bf O Levels} \hfill Aug 1985 - Jun 1987\\
+Rawlins Academy, England, UK\\
+Mathematics (A),
+Physics (A),
+Computer Studies (A),
+Chemistry (B),
+Humanities (B),
+English Literature (B),
+English Language (C),
+Technical Graphics (C)
+\\
+\end{comment}
+\hline
+\section{\sc Professional Appointments}
+%
+{\bf Research Assistant Professor} \hfill {\bf 6 Aug, 2013 - Present} \\
+{\bf University of South Florida}, Tampa, FL USA\\
+%\begin{comment}
+My research is in geohazards and space hazards. Investigating techniques to automatically detect, locate and characterize volcano-seismic signals including tremor, swarms, explosions, rockfalls, pyroclastic flows and lahars, and create next-generation seismic monitoring software. Installed seismic and infrasound stations on Sakurajima volcano (Japan), Masaya volcano (Nicaragua) and Soufriere Hills volcano (Montserrat) and at Kennedy Space Center. Working with NASA on rocket seismo-acoustic signals, detection of near-earth objects and space weather. Led a USF analysis of the fatal 2019 eruption of White Island, on behalf of the New Zealand government. Built and manage the computational infrastructure and instrument pool for the USF Seismology group. Teaching classes in volcano-seismology, programming, seismic data analysis and digital signal processing. Have mentored 15 graduate students.  
+%\end{comment}
+\\
+\hdashline
+\\
+%
+{\bf Staff Seismologist (Software Developer)} \hfill {\bf 12 Sep, 2006 - 28 Jun, 2013} \\
+{\bf Alaska Volcano Observatory \& Alaska Earthquake Center}, University of Alaska Fairbanks\\
+%\begin{comment}
+Developed near-real-time, database-driven seismic monitoring software for the Alaska Volcano
+Observatory and Alaska Earthquake Center. Investigated algorithms to detect earthquake swarms
+at several volcanoes. Participated in volcano and earthquake monitoring, including the 2009
+Redoubt eruption, and volunteered for night-shifts in Anchorage operations room. 
+%\end{comment}
+\\
+\hdashline
+\\
+%
+{\bf Senior Geophysicist \& Applications Developer} \hfill {\bf 1 Jul, 2003 - 14 Jul, 2006} \\
+{\bf British Geological Survey}, Nottingham, England \\
+%\begin{comment}
+A wide variety of geophysical surveying projects involving airborne geophysics, resistivity,
+refraction seismology, ground penetrating radar. Broad portfolio of software development
+projects including writing software to control a robot to scan core samples.
+Wrote training manuals for airborne geophysics. Periodically covered for scientists on break
+at the Montserrat Volcano Observatory. Further upgraded MVO seismic monitoring systems in 2004.
+%\end{comment}
+\\
+\hdashline
+\\
+%
+{\bf Senior Seismologist \& Deputy Director} \hfill {\bf 10 Jan, 2000 - 30 Jun, 2003} \\
+{\bf Montserrat Volcano Observatory (MVO)}, Montserrat, West Indies %(employer: British Geological Survey) 
+\\
+\begin{comment}
+Built a robust seismic monitoring programme, tailored to detecting, locating and characterizing
+rockfalls and pyroclastic flows in near-real-time. Merged existing analog and digital networks 
+into a single virtual network. DInitiated research projects aimed at delivering
+a better understanding of volcano-seismicity, and better seismic monitoring tools. 
+Real-time, round-the-clock monitoring of the Soufriere Hills Volcano eruption which recommenced in November 1999 and continued until July 2003. . 
+\end{comment}
+Led the seismic monitoring programme and the Operations Room and 24-hour surveillance of the volcano. Managed a team of seismic analysts, field technicians and software engineers. Inherited a dysfunctional seismic monitoring programme which jeopardised public safety. Overhauled the entire seismic monitoring programme and refocused it on novel techniques to rapidly detect and characterize volcanic hazards. 
+Merged existing analog and digital networks into a single virtual network. This streamlined operations.
+Collaborated with BGS Seismology to upgrade data acquisition systems to Earthworm.
+Developed robust seismic alarm, analysis and archival systems around an Earthworm+Seisan core.
+Got funding for new digital seismic network (approx. {\$}400k).
+Developed automated system for locating pyroclastic flows.
+Developed real-time energy-magnitude scale.
+Seamlessly managed the move to the new observatory in Dec 2002/Jan 2003 without data loss.
+Recovered and securely archived all MVO seismic data (several TB) from 500+ DDS-1 tapes, Zip disks \& CDs.
+Initiated numerous projects focused on improving monitoring capabilities with university researchers scientists.
+\begin{comment}Highlights:\\
+\begin{itemize}
+\item Merged existing analog and digital networks into a single virtual network. This streamlined operations.
+\item Collaborated with BGS Seismology to upgrade data acquisition systems to Earthworm.
+\item Developed robust seismic alarm, analysis and archival systems around an Earthworm+Seisan core.
+\item Got funding for new digital seismic network (approx. {\$}400k).
+\item Developed automated system for locating pyroclastic flows.
+\item Developed real-time energy-magnitude scale.
+\item Seamlessly managed the move to the new observatory in Dec 2002/Jan 2003 without data loss.
+\item Recovered and securely archived all MVO seismic data (several TB) from 500+ DDS-1 tapes, Zip disks \& CDs.
+\item Initiated numerous projects focused on improving monitoring capabilities with university researchers scientists.
+\end{itemize}
+\end{comment}
+\\
+\hdashline
+\\
+{\bf Postdoctoral Investigator (Software Developer)} \hfill {\bf 12 Mar, 1998 - 7 Jan, 2000} \\
+{\bf Alaska Volcano Observatory}, University of Alaska Fairbanks\\
+Developed IceWeb, the first web-based seismic monitoring system for volcanoes. Featured near-real-time spectrograms, reduced displacement and helicorder plots, and a web-configurable tremor alarm system. The spectrogram browser has been a core AVO monitoring tool since 1998 and inspired spin-offs at MVO, CVO and HVO and Pensive. Participated in volcano and
+earthquake monitoring, including the April 1999 Shishaldin eruption.
+\\
+\hdashline
+\\
+{\bf Systems Analyst/Programmer} \hfill {\bf 1 Sep, 1997 - 1 Mar, 1998}\\
+{\bf TNT Express Worldwide}, Atherstone, England, UK\\
+Three month intensive training course in systems analysis, software design and programming
+Assigned to the re-engineering team thereafter.
+\\
+\hdashline
+\\
+{\bf Junior Seismologist} \hfill {\bf 12 Jun, 1996 - 12 Aug, 1996}\\
+{\bf Montserrat Volcano Observatory}, Montserrat, West Indies \\
+Seismic monitoring, event classification, two-way radio communications with field crews, night duty, investigating the broadband seismic wavefield.
+\\
+\hdashline
+\\
+{\bf Summer Student} \hfill {\bf 15 Jun, 1992 - 12 Sep, 1992}\\
+{\bf CERN (European Centre for Nuclear Research)}, Meyrin, Geneva, Switzerland\\
+Three month intensive training course in particle physics. Computer simulation of muon detectors for the Large Hadron Collider (LHC).
+\\
+\hdashline
+\\
+{\bf Electronics Technician} \hfill {\bf Summer 1989 \& 1990}\\
+{\bf Druck Ltd.}, Groby, Leics, UK\\
+Testing and calibration of pressure transducers. Managed team of 4 staff.\\
+\\
+
+\section{\sc Awards}
+\begin{table}[ht]
+\begin{tabular}{  m{1cm} m{2.2cm}  m{6cm} m{2cm}  m{2cm}  }
+\hline
+When & PIs & Title & Agency & Amount\\
+\hline
+2021 & Connor C, Thompson G & Monitoring Earth’s subsurface with UAV gravity and magnetics & DOD &  \textdollar723,725\\
+\hdashline
+2021 & Thompson G & SHAARC: Scientific Research, Studies, and Analysis for Solar Radio Burst Instrumentation & NASA-Kennedy & \textdollar301,219\\
+\hdashline
+2020 & Thompson G, McNutt S, Braunmiller J & Assess the response of GNS Science to volcanic unrest at White Island, New Zealand & WorkSafeNZ & \textdollar105,000 \\
+\hdashline
+2020 & Braunmiller J, Thompson G & Improving Seismic Source Characterization in North Korea and Iran & US AFRL & \textdollar399,877 \\
+\hdashline
+2017 & Braunmiller J, Thompson G & Along strike variation of Seismic Moment Release, Coupling and Seismicity along Oceanic Transform Faults & NSF & \textdollar186,667 \\
+\hdashline
+2017 & Thompson G, Braunmiller J & Seismic and infrasound characterization of rainfall-induced lahars in the Belham Valley on Montserrat & USF/CAS & \textdollar5,000 \\
+\hdashline
+2016 & Thompson G & GISMO: A seismic toolbox for MATLAB & MathWorks Inc. & \textdollar5,000 \\
+\hdashline
+2016 & Thompson G, McNutt S & Seismic and infrasound recording of rocket launches from Kennedy Space Center & Florida Space Grant Consortium & \textdollar25,000 \\
+\hdashline
+2016 & Thompson G, McNutt S & Preliminary Seismic and Infrasound Analyses of the SpaceX Falcon 9 Fireball of September 1, 2016 & SpaceX & \textdollar5,000 \\
+\hdashline
+2003 & Thompson G, Baptie BJ, Flower S, Ottemoller L & MVO Digital Seismic Network Upgrade & UK DFID & \textdollar400,000\\
+\hdashline
+\end{tabular}
+\end{table}
+\\
+\newpage
+
+\section{\sc Invited Talks \& Colloquia}
+\begin{table}[ht]
+\begin{tabular}{  m{1.1cm}  m{5.5cm} m{6cm}  }
+\hline
+When & Where & Title \\
+\hline
+2020 & University of South Florida & Seismo-acoustic monitoring of volcanoes \\
+\hdashline
+2019 & University of Utah & Developing the next generation of volcano-seismic monitoring tools \\
+\hdashline
+2018 & New Mexico Tech & Seismo-acoustic monitoring of volcanoes and rockets \\
+\hdashline
+2017 & AGU New Orleans & Seismo-acoustic recordings of the 2016/09/01 SpaceX explosion \\
+\hdashline
+2013 & GFZ Potsdam & Volcano-seismic alarm systems \\
+\hdashline
+2003 & British Geological Survey & Monitoring the Soufriere Hills Volcano: The Montserrat Project \\
+\hdashline
+2003 & University of Hawaii (Kona) & Proposal to install an infrasound network in Montserrat. \\
+\hdashline
+2003 & University of Hawaii (Honolulu) & Advances in monitoring at MVO \\
+\hdashline
+2003 & Hawaii Volcano Observatory & Advances in monitoring at MVO \\
+\hdashline
+2003 & Duke University & Seismic source mechanisms on Montserrat \\
+\hdashline
+2003 & Michigan Tech University & Low frequency seismicity at Soufriere Hills Volcano \\
+\hdashline
+2002 & EU Volcano Training Network & Seismic Monitoring at the Montserrat Volcano Observatory. \\
+\hdashline
+2002 & EU Volcano Training Network &  Volcano Seismology \\
+\hdashline
+1999 & Meteorlogical Research Institute (Tsukuba, Japan) & Volcano \& earthquake triggering. \\
+\hline
+\end{tabular}
+\end{table}
+\\
+
+\newpage
+
+\section{\sc Teaching Experience}
+\begin{table}[ht]
+\begin{tabular}{m{2cm} m{1.4cm} m{6cm} m{2.6cm}}
+\hline
+When & Where & What & Role\\
+\hline
+2020 Fall & USF & Python and ObsPy & Teacher \\
+\hdashline
+2019 Fall & USF & Computational projects in Seismology & Teacher\\
+\hdashline
+2019 Spring & USF & Building Raspberry Shakes and Booms & Teacher \\
+\hdashline
+2018 Fall & USF & Introduction to Programming with MATLAB & Teacher \\
+\hdashline
+2018 Fall & USF & Time Series Analysis & Co-Teacher \\
+\hdashline
+2017 Fall & USF & Geovisualization & Co-Teacher\\
+\hdashline
+2016 Spring & USF & Time Series Analysis & Teacher\\
+\hdashline
+2016 June & INETER & GISMO for volcano monitoring & Teacher\\
+\hdashline
+2015 Spring & USF & Topics in Volcano-Seismology & Teacher\\
+\hdashline
+2014 Fall & USF & Seismic data analysis with Antelope and MATLAB & Teacher\\
+\hdashline
+2009 Fall & UAF & Beyond the Mouse & Co-Teacher\\
+\hdashline
+1995-1997 & Leeds & Inverse Theory & Teaching Assistant\\
+\hdashline
+1995-1997 & Leeds & PC Skills for Geoscientists & Teaching Assistant\\
+\hline
+\end{tabular}
+\end{table}
+\\
+
+\begin{comment}
+\section{\sc Research Experience}
+Real-time seismic alarm systems capable of notifying scientists of anomalous seismicity (e.g. volcanic tremor, earthquake swarms) that may precede volcanic eruptions.\\
+Station state-of-health monitoring systems to automate the removal of "noisy" or "dead" stations from downstream processes including sta/lta triggering, event association and alarm systems.\\
+Web-based seismic monitoring systems in Alaska and Montserrat (lead Thompson).\\
+Review of seismic monitoring at the Montserrat Volcano Observatory, 2000-2008 (lead Thompson).\\
+Banded seismicity at the Soufriere Hills Volcano, 1996-2006, and its relation to dome collapses, explosions and extrusion rate (lead Thompson).\\
+Near-real-time determination of pyroclastic flow trajectories and dome growth direction (lead Thompson).\\
+A magnitude scale for volcano-seismic events on Montserrat (lead Thompson).\\
+Correlation between seismicity, dome collapse volume and ash column height (lead Thompson).\\
+Seismicity of the Soufriere Hills Volcano, 2000-2008 (lead De Angelis).\\
+Volcanic tremor preceding the March 2009 eruptions of Redoubt Volcano (lead McNutt).\\
+Real-time seismic monitoring of the 2009 Redoubt eruption (lead Thompson).\\
+Character of the long-period and very-long-period seismic wave field during the 2009 eruption of Redoubt Volcano, Alaska (lead Haney).\\
+Tremor analysis of the 2009 Redoubt eruption sequence (lead Haney/Reyes).\\
+``Solar coronal heating'', Senior Honours Research Project, University of St. Andrews, Spring 1993.\\
+``Simulation of jet-cell muon detectors'', European Center for Nuclear Research (CERN), Summer 1992.\\
+``Human evolution'', Rawlins Upper School, Spring 1987.\\
+\end{comment}
+
+\begin{comment}
+\section{\sc Professional Service}
+\hline
+% sessions chaired if not under conferences, journals reviewed for and dates
+Reviewer, Journal of Volcanological and Geothermal Research, 1998-Present\\
+Reviewer, Encyclopedia of Volcanoes, 2014\\
+%Mentoring of Masters and PhD students working on Montserrat data (2000-2004) and on Alaskan data (2007-present).\\
+\end{comment}
+
+%\section{\sc Departmental/University Service}
+
+\begin{comment}
+\section{\sc Outreach}
+\hline
+% work with libraries, schools, public lectures etc.
+2017 Taste of Science, St Petersburg FL \\
+2011-2012 Joy Elementary School Science Night, Fairbanks AK \\
+2007-2010 Tanana Valley State Fair, Fairbanks AK\\
+%Teaching the public about earthquakes and volcanoes in Alaska\\
+2007-2010 Science Pot-Pourri, University of Alaska Fairbanks\\
+%Teaching the public about earthquakes and volcanoes in Alaska\\
+2006-2009 Seismic lab tours to emergency managers and school groups\\
+%Tours of the seismic lab and presentations about seismic hazards, both on- and off-site.\\
+2006-2009 Lectures on regional and volcanic seismicity in Alaska to VIPs and school groups\\
+2000-2004 Daily tours of MVO to public\\
+2000-2003 Tours of MVO to school/university groups and VIPs\\
+2000-2003 Advised local authorities on volcano crisis management at weekly meetings\\
+2000-2003 Weekly live radio interviews to inform the public about volcanic activity\\
+%Gave > 100 tours of the observatory to officials from the European, British and Montserrat governments, and members of the public, including school/university students and tourists.\\
+%Gave live radio interviews on Radio Montserrat to explain volcanic and seismic activity, often to inform the public of major activity that was occurring at that moment.\\
+%\section{\sc Media Coverage}
+%"Montserrat to Host Seismology Workshop", Montserrat Reporter, 23 August 2002, http://www.montserratreporter.org/fra0802-4.htm\\
+%"Volcano Hazard, Risk Assessment Next Week", Montserrat Reporter, 12 January 2001, http://www.montserratreporter.org/news0101-2.htm\\
+\end{comment}
+\\
+
+\section{\sc Computer Experience / Skills}
+\begin{itemize}
+\item Built and manage a hybrid Linux/Mac network for the USF Seismology Group with 40 TB RAID-6 server
+\item Upgraded and extended data acquisition, analysis and alarms systems (computer hardware and software) at the Montserrat Volcano Observatory
+\item Expertise in designing \& implementing seismic monitoring tools into complex software ecosystems 
+\item Lead developer of GISMO toolbox for seismic data analysis
+\item Extensive software development experience with Antelope, GISMO and ObsPy
+\item Experienced in software analysis \& design, project management
+\item Strong programmer in Python, MATLAB, Perl, PhP. Also C/C++, FORTRAN, VisualBasic.
+%Network Administration: Linux (Ubuntu, RedHat, SUSE), Windows, MacOSX.
+\item Experienced in Unix/Linux Administration.
+%Mapping tools: GMT, GoogleMaps API, KML, ArcGIS.\\
+\item Version control: git, svn, cvs. I have ~20 repositories on GitHub
+\item Configuring seismic software: Antelope, Earthworm, Seisan, Seislog, GISMO, ObsPy.
+\item Database schema design \& implementation: MySQL, Antelope/Datascope.
+\item Expert in converting, organizing and archiving large (TBs) seismic and infrasound. datasets.
+\\
+%Project experience in MATLAB, Perl, PhP, Python, FORTRAN, C, Java, Visual Basic, Tcl/Tk, COBOL, and BBC Basic.
+%Scripting expertise with Perl, awk, sed, csh, and bash.\\
+%Developed products on Linux (Ubuntu, Red Hat, SuSE), Solaris, Windows (including Cygwin) and MacOS.\\
+%%Some experience in J2EE, IDL, GoogleMaps API2, KML, ArcGIS and MySQL.\\
+%Automated scripts using the Unix crontab, Windows Scheduler and Antelope rtexec.\\
+%Implemented separate operational and development systems with auto-restart and failover capability at Alaska Volcano Observatory.\\
+%Extensive experience of developing Antelope applications in Perl, MATLAB, C, PhP and Python.\\
+%Developed data acquisition, alarm, analysis and archival systems with failover capabilities at Montserrat Volcano Observatory.\\ 
+%Co-admininstered a Linux research computing network at University of Alaska.\\
+%Built a Linux/MacOS research computing network at University of South Florida.\\
+\end{itemize}
+%\end{comment}
+
+%\begin{comment}
+\section{\sc Research Interests}
+\hline
+\\
+\begin{itemize}
+\item Applications of volcano seismology, infrasound \& lightning to volcano monitoring.
+\item Novel techniques to detect, characterize and locate earthquake swarms, tremor \& pyroclastic density currents and lahars.
+\item Auto-classification of volcano-seismic signals.
+\item Enhancing alarm systems and early warning systems to detect earthquakes, tsunami and volcanic hazards.
+\item Evolution of seismic monitoring systems.
+\item Integrated monitoring systems, e.g. utilizing seismic, infrasound, geodetic, lightning and remote sensing techniques.
+\end{itemize}
+%\end{comment}
+
+\begin{comment}
+\section{\sc Teaching Areas}
+\hline
+% a list of up to 10 course titles you could teach
+\begin{itemize}
+\item Volcano Seismology
+\item Volcano Monitoring
+\item Computer Programming (in MATLAB, Python, Perl or C)
+\item Unix \& shell scripting
+\item Seismic Data Analysis
+\item Time Series Analysis
+\item Digital Signal Processing
+%Software development with Antelope\\
+%Mathematics for Geologists (Calculus, Linear Algebra, Probability, Complex Analysis)\\
+\end{itemize}
+\end{comment}
+
+\begin{comment}
+%\section{\sc Languages}
+\hline
+%All languages to be listed vertically, with proficiency in reading, speaking, and writing clearly demarcated using terms such as: native, fluent, excellent, conversational, good, can read with dictionary, etc.
+%Spanish: conversational, can read
+%\\
+\end{comment}
+
+\begin{comment}
+\section{\sc Product Development}
+\begin{table}[ht]
+\begin{tabular}{ m{2cm} m{10cm} }
+\hline
+When & What\\
+\hline
+2015 & GISMO: seismic data analysis toolbox for Matlab/Octave. 
+\hdashline
+2012 & Python toolboxes for analysis of earthquake catalogs and event rates.\\
+\hdashline
+2011 & IceWeb2: A web-based system for tremor monitoring in real-time.\\
+\hdashline
+2010 & CWAKE: A Common Workspace for analysis of AlasKan Earthquakes.\\
+\hdashline
+2010 & VOLC2: A Google Maps mash-up for exploring hypocenters in Alaska and Hawaii.\\
+\hdashline
+2010 & MATLAB toolboxes for analysis of earthquake catalogs and event rates (part of GISMO).\\
+\hdashline
+2009-2010 & Earthquake swarm detection and notification system.\\
+\hdashline
+2007-2008 & The Trans-Alaska Pipeline Seismic Monitoring System.\\
+\hdashline
+2007-2008 & Real-time Earthquake Notification for Alaskan Emergency Operations Centers.\\
+\hdashline
+2006-2007 & The Antelope-ShakeMap system.\\
+\hdashline
+2005 & Programmed a robot to scan drill cores (Visual Basic).\\
+\hdashline
+2005 & Developed a system to batch OCR millions of scanned documents from BGS archives.\\
+\hdashline
+2004 & Migrated legacy geophysical software from Silicon Graphics Fortran to Visual Fortran.\\
+\hdashline
+2001-2002 & The MVO web-based monitoring system.\\
+\hdashline
+2000-2002 & A real-time energy-based magnitude scale for Montserrat\\
+\hdashline
+2000-2002 & Real-time rockfall location system.\\
+\hdashline
+2000-2002 & Volcanic tremor detection and notification system.\\
+\hdashline
+1998-2000 & IceWeb: a web-based seismic monitoring system for Alaskan volcanoes.\\
+\hline
+\end{tabular}
+\end{table}
+\end{comment}
+
+\\
+\newpage
+\section{\sc Seismic Fieldwork Leadership}
+\begin{table}[ht]
+\begin{tabular}{ m{2.5cm} m{12cm} }
+\hline
+When & What\\
+\hline
+2018-2021 & Kennedy Space Center, a network of PASSCAL seismic stations\\
+\hdashline
+2018-2019 & Montserrat: Seismo-acoustic monitoring of floods/lahars in the Belham Valley\\
+\hdashline
+2016-2018 & Montserrat: Seismic monitoring of geothermal drilling project.\\
+\hdashline
+2016-2021 & Kennedy Space Center, a network of USF seismo-acoustic stations.\\
+\hdashline
+2015-2016 & Masaya volcano (Nicaragua), two USF seismo-acoustic stations.\\
+\hdashline
+%2013 & Telica volcano seismic network (Nicaragua), maintenance only.\\
+%2012 & Alaska seismic network, maintenance only.\\
+%2012 & Susitna-Watana dam project (Alaska), installation only.\\
+%2012 & Uturuncu volcano (Bolivia) and Lazufre volcano (Chile), maintenance only.\\
+%2010 & Bezymianny volcano (Kamchatka), removal only.\\
+%2006-2007 & Alaska seismic network, installation and maintenance. \\
+2000-2004 & Montserrat seismic network, installation and maintenance.\\
+\hdashline
+Jun-Aug 1996 & Soufriere Hills Volcano (Montserrat), installation, maintenance and removal.\\
+\hdashline
+Oct 1995 & Mount Batur (Bali), maintenance only.\\
+%1995 & Taupo Volcanic Zone (New Zealand), installation only.\\
+%1994 & Stromboli volcano (Italy), maintenance only.\\
+\hdashline
+\end{tabular}
+\end{table}
+Listed here is only seismic fieldwork I led. I have participated in other seismic fieldwork throughout Alaska for AEC, and at volcanoes in Italy, New Zealand, Kamchatka, Bolivia, Chile and Nicaragua. And participated in other geoscientific fieldwork: e.g. airborne gravity and magnetics, GPR, GPS, seismic refraction, COSPEC, FTIR.\\
+\\
+%
+\section{\sc Graduate Advisees}
+\hline
+\begin{table}[ht]
+\begin{tabular}{c c c c}
+Student & Degree & Role & Dates\\
+\hline
+Saurav Chakraborty & PhD & Committee Member & 2021-Present\\
+\hdashline
+Elham Moslemi & MS & Committee Member & 2021-Present\\
+\hdashline
+Bradford Mack & PhD & Co-advisor & 2018-Present\\
+\hdashline
+Daniel Graybeal & MS & Committee Member & 2018-Present\\
+\hdashline
+Tianyu Rong & MS & Committee Member & 2018-2019\\
+\hdashline
+Charlie Breithaupt & PhD & Committee Member & 2017-2020\\
+\hdashline
+Jessica Mejia & PhD & Committee Member & 2017-2021\\
+\hdashline
+Kathryn Dorn & PhD & Committee Member & 2017-Present\\
+\hdashline
+Daniel Graybeal & MS & Committee Member & 2017-Present\\
+\hdashline
+Sajad Jazayeri & PhD & Committee Member & 2017-2019\\
+\hdashline
+Cassandra Smith	& PhD & Committee Member & 2015-2019\\
+\hdashline
+Heather McFarlin & PhD & Co-advisor & 2013-Present\\
+\hdashline
+Cassandra Smith	& MS & Committee Member & 2013-2015\\
+\hdashline
+Alexandra Farrell & PhD & Co-advisor & 2013-2021\\
+\hdashline
+Chris Bruton & MS & Committee Member & 2010-2013\\
+\hdashline
+Helena Buurman & PhD & Committee Member & 2009-2013\\
+\hdashline
+\end{tabular}
+\label{table:nonlin}
+\end{table}
+
+\begin{comment}
+\section{\sc Other Fieldwork Experience}
+\hline
+Seismic network decommission at Bezymianny volcano, Kamchatka, 2010.
+Fieldwork in McCarthy, Bering Glacier Camp and Ultima Thule, Alaska, assisting with broadband seismic station installations and repairs, 2006-8.
+Hiking trips to Pacaya, Fuego and Santaiguito volcanoes, April 2005.
+Ground penetrating radar (Sunderland), seismic refraction (Holme Pierreponte), airborne
+geophysics (SW Scotland) and resistivity surveys (Easington) in the UK, 2003-6.
+Observation flights, seismic station installation/maintenance, and assistance with GPS, rainwater
+and ash sample collection and COSPEC measurements, Montserrat, 2000-4.
+GPS survey in along the Parks Highway, Alaska, July 1999.
+Installation and data analysis of roving broadband seismic stations, Montserrat, June-August
+1996.
+Installation, maintenance, and quality control of data from, broadband seismic networks in New
+Zealand and Indonesia, 1995.
+Gravity, magnetic, seismic refraction & resistivity surveys in Cyprus, March 1994. 
+\end{comment}
+
+\newpage
+\section{\sc Training}
+\hline
+\begin{table}[ht]
+\begin{tabular}{ m{2.5cm}  m{10cm} }
+When & What\\
+\hline
+17-22 Feb, 2019 & 9th Munich Earth Skience School: Machine learning\\
+\hdashline
+23-28 Feb, 2014 & 4th Munich Earth Skience School: ObsPy meets seismic arrays\\
+\hdashline
+21-25 Jun, 2010 & Earthworm Training Course by Instrumental Software Technologies Inc. \\
+\hdashline
+1-12 Feb, 2010 & Intensive Spanish language course, Cuzco, Peru \\
+\hdashline
+31 Aug - 4 Sep, 2009 & Advanced Scientific Python Programming course, Berlin, Germany \\
+\hdashline
+18 Apr - 6 May, 2005 & Intensive Spanish language course, Antigua \& San Pedro, Guatemala.\\
+\hdashline
+18-21 Feb, 2005 & Unleash the Power Within, intensive 4-day leadership workshop\\
+\hdashline
+4-29 Oct, 2004 & Intensive Spanish language course, Colegio Debiles, Salamanca, Spain\\
+\hdashline
+2003-2006 & Numerous short courses at BGS including: Off-road driving, Java/J2EE, Oracle/SQL, Excel, French, Science Communication, eScience\\
+\hdashline
+9-13 Dec, 2002 & Glowworm Training Course by VDAP at Cascades Volcano Observatory\\
+\hdashline
+Sep-Nov, 1997 & Systems analysis and design, TNT Express Worldwide\\
+\hdashline
+21-26 Oct, 1996 & CRAC Insight into Management course, University of Durham\\ 
+\hdashline
+%Development of teamwork & communication skills through several 1-3 hour intensive group- oriented case studies including presentations.\\
+17-18 Oct, 1992 & Conoco Introduction to Management course, University of St. Andrews\\ 
+\hdashline
+%A series of case studies intended to give undergraduates training in teamwork.\\
+%Particle physics and particle accelerators, CERN Summer School, Geneva, Switzerland, June- August 1992 (9 weeks).\\
+\end{tabular}
+\label{table:nonlin}
+\end{table}
+
+\begin{comment}
+\section{\sc Leadership Experience}
+\hline
+\begin{table}[ht]
+\begin{tabular}{m{2.4cm} m{10.6cm}}
+When & What\\
+\hline
+2002-2003 & Led the move of MVO to a new purpose built observatory site.\\
+\hdashline
+2000-2003 & Proposed, managed the international bidding process for, and obtained funding for a new digital seismic network for MVO.\\
+\hdashline
+2000-2003 & Deputy Director of MVO. \\
+\hdashline
+2000-2003 & Seismic Network \& Operations Room Manager of MVO. Managed a team of seismic analysts, field technicians and a software engineer.\\
+\hdashline
+2000-2002 & Recovered, archived and built an online database of all Montserrat seismic data.\\
+\hdashline
+%1998-Present & Led numerous software development \& data management projects. \\ 
+%Managed a team of seismic analysts, field technicians and a software engineer in my role as Senior Seismologist, leading the seismic monitoring programme at MVO and the Operations Room.\\
+%Led the successful and logistically complex move of the seismic monitoring to a new observatory in 2002 at a time of major activity without losing any data.\\
+2000-2003 & Built the modern seismic monitoring programme at MVO\\
+\hdashline
+%Filled what was a leadership void at MVO, inspiring, motivating and empathising with staff, and encouraging better teamwork, communication, respect and integrated monitoring.\\
+%Had a great rappore with the public on Montserrat, due to my willingness to always make myself available outside of office hours and contribute to community sports.\\
+1993-1994 & Staff-student council representation for my M.Sc. course\\
+1989 Summer & Managed a team of four staff manufacturing and calibrating pressure transducers at Druck Ltd.\\
+\hdashline
+\end{tabular}
+\label{table:nonlin}
+\end{table}
+\end{comment}
+
+\begin{comment}
+\section{\sc Hazard Management Experience}
+\hline
+{\bf Alaska Volcano Observatory}\\
+Participated in the Redoubt Operations Room, February - April 2009 monitoring the eruption and responding to questions by the media and public.\\
+Participated in the Shishaldin Operations Room, March - May 1999.\\
+Beeper duty, 1998-1999, 2008-present.\\
+{\bf Alaska Earthquake Information Center}\\
+Developed real-time notification system for emergency managers.\\
+Co-developed the Alaska ShakeMap system.\\
+Co-developed the Trans-Alaska Pipeline alarm system.\\
+Duty Seismologist, 1998-1999, 2006-2008. Responsible for rapid location and dissemination of information of significant earthquakes in Alaska to authorities, media and public.\\
+{\bf Montserrat Volcano Observatory 2000-2004}\\
+Member of the Risk Assessment Panel & Scientific Advisory Committee, assessing the hazards and risks posed by the Soufriere Hills Volcano.\\
+Day-to-day management of the Operations Room which involved deciding access to the day-time entry and exclusion zones, initiating small scale evacuations, and making live radio broadcasts.\\
+Represented MVO at weekly VMSG/VEG meetings with the authorities.\\
+Acted as MVO Director on several occasions.\\
+Alarm duty 24-7. First responder to > 1000 volcano alarms, with call-down responsibility for local authorities.\\
+\end{comment}
+
+\begin{comment}
+%\section{\sc Memberships \& Affiliations}
+\section{\sc Memberships}
+\hline
+\begin{itemize}
+\item American Geophysical Union (AGU).
+\item Seismological Society of America (SSA).
+\item International Association of Volcanology and Chemistry of Earth's Interior (IAVCEI).
+\item European Seismological Commission (ESC) Working Group "Seismic phenomena associated with volcanic activity".
+\end{itemize}
+\\
+\end{comment}
+
+
+
+\begin{comment}
+\newpage
+\section{\sc References}
+\hline
+\begin{multicols}{2}
+Michael E. West \\ 
+Director \\ 
+Alaska Earthquake Center \\ 
+2156 Koyukuk Dr. \\ 
+University of Alaska, Fairbanks \\ 
+AK 99775-7320 \\ 
+Tel: 907-474-6977 \\ 
+email: mewest@alaska.edu \\
+Mike was my supervisor, 2008-2013.\\
+
+Paul Friberg \\    
+CEO/Seismologist \\
+Instrumental Software Technologies, Inc. \\
+77 Van Dam Street \\
+Saratoga Springs \\
+New York, 12866 \\
+Tel: Phone 845.256.9290 \\
+%Mobile +1.914.489.4888
+email: p.friberg@isti.com \\
+Paul has taught me Earthworm {\&} AQMS\\
+
+Silvio De Angelis \\ 
+Senior Lecturer \\ 
+School of Environmental Sciences \\ 
+University of Liverpool \\ 
+4 Brownlow Street \\
+Liverpool, L69 3GP \\
+United Kingdom \\
+Tel: +44 (0)151 794 5161 \\
+email: S.De-Angelis@liverpool.ac.uk \\
+Silvio has had many of the same jobs as I\\
+
+\vfill\null
+\columnbreak
+
+%Stephen R. McNutt \\ 
+%Professor \\ 
+%School of Geosciences \\ 
+%University of South Florida \\ 
+%4202 East Fowler Ave., NES107\\ 
+%Tampa, FL 33620 \\ 
+%Tel: 813-974-4584 \\ 
+%email: smcnutt@usf.edu\\ 
+
+Jackie Caplan-Auerbach \\
+Associate Professor \\
+Geology Department \\
+Western Washington University \\
+516 High St., MS 9080 \\
+Bellingham, WA 98225 \\
+Tel: 360-650-4153 \\
+email: caplanj@wwu.edu \\
+Jackie and I have been at workshops together\\
+
+Richard A. Herd \\ 
+Senior Lecturer \\ 
+School of Environmental Sciences \\ 
+University of East Anglia \\
+Norwich, NR4 7TJ \\
+United Kingdom \\
+Tel: +44 (0)1603 59 3667 \\ 
+email: r.herd@uea.ac.uk \\
+Ricky was the other senior scientist at MVO\\
+
+\end{multicols}
+
+%John C. Eichelberger, Program Coordinator of the Volcano Hazards Program, USGS, Reston, VA.\\
+%William J. C. McCourt, Principle Geologist and Head of International Projects, British Geological Survey, UK.\\
+%Simon R. Young, CEO of Caribbean Risk Managers, Washington DC.\\
+\end{comment}
+
+\end{resume}
+\end{document}
+
+

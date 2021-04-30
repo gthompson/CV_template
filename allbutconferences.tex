@@ -1,0 +1,61 @@
+\documentclass{article}
+\usepackage[backend=biber,style=numeric,sorting=ydnt,defernumbers=false]{biblatex}
+
+
+\newcounter{total}
+\newcounter{totarticles}
+\newcounter{totbooks}
+\newcounter{totreports}
+\AtDataInput{%
+    \ifentrytype{article}%
+        {\stepcounter{totarticles}}%
+        {}%
+    \ifentrytype{inbook}%
+        {\stepcounter{totbooks}}%
+        {}%
+    \ifentrytype{report}%
+        {\stepcounter{totreports}}%
+        {}%         
+    }%
+
+% Print the labelnumber as the total number of entries in the
+% current refsection, minus the actual labelnumber, plus one
+%\DeclareFieldFormat{labelnumber}{\mkbibdesc{#1}}    
+% Print labelnumber as actual number, plus item total, minus one
+\newrobustcmd{\mkbibdesc}[1]{%
+    \number\numexpr\thetotal+1-#1\relax}
+
+\newcommand{\printbibsection}[2]{%
+    \printbibliography[type={#1}, title={#2}, resetnumbers=false]%
+    }%
+
+\addbibresource{bib/gtpapers.bib}
+\addbibresource{bib/gtbookchapters.bib}
+\addbibresource{bib/gtreports.bib}
+\begin{document}
+    \nocite{*}
+    
+%\hline
+\begin{table}[ht]
+\begin{tabular}{c c c c}
+\hline%\hline
+    . & Number \\
+\hline
+    Journal articles & \thetotarticles{} \\
+    Book chapters & \thetotbooks{} \\
+    Reports & \thetotreports{} \\
+\hline
+\end{tabular}
+\label{table:nonlin}
+\end{table}
+
+    \setcounter{total}{\thetotarticles}
+    \printbibsection{article}{Peer-reviewed Journal Articles} % Print all articles from the bibliography
+
+    \setcounter{total}{\thetotbooks}
+    \printbibsection{inbook}{Book Chapters} % Print all books from the bibliography
+
+    \setcounter{total}{\thetotreports}
+    \printbibsection{report}{Scientific \& Technical Reports} % Print all reports from the bibliography
+       
+\end{document}  
